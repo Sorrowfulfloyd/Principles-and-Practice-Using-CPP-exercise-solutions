@@ -1,4 +1,4 @@
-// Exercise 3.6 - Numerical Sequence from smallest to largest
+// Exercise 3.7 - String Sequence from Alphabetic Order
 
 #include <iostream>
 #include <string>
@@ -9,15 +9,17 @@
 using namespace std;
 inline void keep_window_open() {  cout<<"Enter a key to exit.\n"; char ch; cin>>ch; } // Depending on your compiler you shall need this to keep the app open...
 
+string val1 = " ";
+string val2 = " ";
+string val3 = " ";
 
-int main() {
-    int val1 = 0;
-    int val2 = 0;
-    int val3 = 0;
-    int small = 0; 
-    int medium = 0;
-    int xlarge = 0;
-    cout << "Enter three numbers to get them sequenced from smallest to biggest.\n";
+string small = " ";
+string medium = " ";
+string xlarge = " ";
+
+int main()
+{
+    cout << "Enter three words to get them sequenced in an alphabetic order:\n";
     while(cin >> val1 >> val2 >> val3)
     {
         if(val1 <= val2 && val1 <= val3)
@@ -62,12 +64,6 @@ int main() {
             xlarge = val1;
             medium = val2;
         }
-        
-    cout << "The numbers you've entered from smallest to biggest are: " << small << " " << medium << " " << xlarge << '\n'; 
-
+    cout << "The strings you've entered in Alphabetic order: " << small << " " << medium << " " << xlarge << '\n'; 
     }
-
-
-
-    keep_window_open();
 }
