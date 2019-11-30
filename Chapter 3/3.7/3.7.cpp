@@ -7,7 +7,7 @@
 #include <cmath>
 
 using namespace std;
-inline void keep_window_open() {  cout<<"Enter a key to exit.\n"; char ch; cin>>ch; } // Depending on your compiler you shall need this to keep the app open...
+inline void keep_window_open() { char ch; cin>>ch; } // Depending on your compiler you shall need this to keep the app open...
 
 string val1 ;
 string val2;
