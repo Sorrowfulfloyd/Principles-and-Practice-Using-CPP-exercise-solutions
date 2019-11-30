@@ -23,8 +23,7 @@ int main() {
         if(val1 <= val2 && val1 <= val3)
         {
             small = val1;
-        }
-        else if(val2 <= val3)
+        if(val2 <= val3)
         {
             medium = val2;
             xlarge = val3; 
@@ -34,11 +33,11 @@ int main() {
             xlarge = val2;
             medium = val3;
         }
-        if(val2 <= val1 && val2 <= val3)
+        }
+        else if(val2 <= val1 && val2 <= val3)
         {
             small = val2;
-        }
-        else if(val1 <= val3)
+        if(val1 <= val3)
         {
             medium = val1;
             xlarge = val3;
@@ -47,12 +46,12 @@ int main() {
         {
             xlarge = val1;
             medium = val3;
+        }    
         }
-        if(val3 <= val1 && val3 <= val2)
+        else if(val3 <= val1 && val3 <= val2)
         {
             small = val3;
-        }
-        else if(val1 <= val2)
+        if(val1 <= val2)
         {
             medium = val1;
             xlarge = val2;
@@ -61,7 +60,9 @@ int main() {
         {
             xlarge = val1;
             medium = val2;
+        }    
         }
+        
         
     cout << "The numbers you've entered from smallest to biggest are: " << small << " " << medium << " " << xlarge << '\n'; 
 
