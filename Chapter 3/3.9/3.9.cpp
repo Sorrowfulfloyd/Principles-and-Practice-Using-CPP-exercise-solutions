@@ -18,7 +18,7 @@ int main()
         if(spell == "zero")
             cout << "0\n";
         else if (spell =="one") // else if is to specify a new statement if the first IF statement is false.
-            cout << "one\n";
+            cout << "one\n";    // if we use seperate if statements to check every single input that'll broke our order. *as far as I know*
         else if (spell =="two") // which goes on and on. until you decide to stop.
             cout << "two\n";
         else // whereas else is just the opposite of the if statement.
