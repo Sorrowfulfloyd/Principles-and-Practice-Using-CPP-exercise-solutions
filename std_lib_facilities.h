@@ -26,7 +26,6 @@
 #ifndef H112
 #define H112 020215L
 
-
 #include<iostream>
 #include<iomanip>
 #include<fstream>
