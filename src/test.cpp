@@ -1,26 +1,14 @@
-#include "std_lib_facilities.h"
+#include <iostream>
+#include <cstdio>
+using namespace std;
+int a;
+long b;
+char c;
+float d;
+double e;
 int main()
-try
 {
-    double x = 4;
-    double d = 5 + x; // d = 2.5
-    if (d = 2 * (x + 0.5)) // if 2.5 == 9
-        cout << "Success!\n";
-
-    keep_window_open();
-    return 0;
-}
-catch (exception &e)
-{
-    cerr << endl
-         << "\nUnexpected encounter: " << e.what() << '\n'
-         << endl;
-    keep_window_open();
-    return 1;
-}
-catch (...)
-{
-    cerr << "Oops: unknown exception!\n";
-    keep_window_open();
-    return 2;
+	scanf("%d %ld %c %f %lf", &a, &b, &c, &d, &e);
+	printf("%d %ld %c %f %lf", a, b, c, d, e);
+	system("pause");
 }
